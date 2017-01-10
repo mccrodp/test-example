@@ -55,11 +55,11 @@ describe('Search engine tests', function() {
 
   });
 
-  it('should show the DuckDuckGo main search page',function(done) {
+  it('should show the X-Team main page',function(done) {
     client
-      .url('https://duckduckgo.com/')
+      .url('https://x-team.com/')
       .webdrivercss(testName, {
-        name: 'duckduck'
+        name: 'xteam'
       }, shoovWebdrivercss.processResults)
       .call(done);
 
